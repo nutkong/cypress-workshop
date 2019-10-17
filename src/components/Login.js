@@ -55,7 +55,7 @@ class Login extends React.Component {
 
               <ListErrors errors={this.props.errors} />
 
-              <form onSubmit={this.submitForm(email, password)}>
+              <form data-test="login-form" onSubmit={this.submitForm(email, password)}>
                 <fieldset>
 
                   <fieldset className="form-group">
