@@ -15,4 +15,9 @@ build
 npm-debug.log
 .idea
 
+# terraform
 .terraform
+
+# packager lock file
+*-lock.json
+*.lock
