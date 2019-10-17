@@ -1,5 +1,5 @@
 echo "STARTING MONGODB..."
-sudo docker run --name mongodb -d mongo:3.4
+sudo docker run --name mongodb -ditp 27017:27017 mongo:3.4
 
 echo "STARTING EXPRESS..."
 sudo docker image build -t conduit-bn -f ./backend.Dockerfile .
