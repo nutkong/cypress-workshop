@@ -8,9 +8,9 @@
 ## Environment setup (Mac)
 
 ✅ git<br/>
-✅ nodeJS v10.16 or above<br/>
-✅ yarn v1.17 or above<br/>
-✅ VSCODE (recommend)<br/>
+✅ nodeJS v10.16 or above<br>
+✅ yarn v1.17 or above<br>
+✅ VSCODE (recommend)<br>
 
 ```sh
 $ git --version
@@ -18,6 +18,6 @@ $ node --version
 $ yarn --version
 ```
 
-https://docs.cypress.io/api/commands/should.html#Method-and-Value
-https://docs.cypress.io/api/commands/type.html#Syntax
-https://docs.cypress.io/api/commands/submit.html#Syntax
+https://docs.cypress.io/api/commands/should.html#Method-and-Value<br>
+https://docs.cypress.io/api/commands/type.html#Syntax<br>
+https://docs.cypress.io/api/commands/submit.html#Syntax<br>
