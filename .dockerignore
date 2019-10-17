@@ -1,0 +1,34 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+coverage
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.idea
+
+# terraform
+.terraform
+
+# packager lock file
+*-lock.json
+*.lock
+
+# workspace configuration
+.vscode
+
+# non-ui files
+Dockerfile
+docker-compose.yml
+.git
+.editorconfig
+.gitignore
+.travis.yml
+**/.gitignore
+**/.travis.yml
+jsconfig.json
+README.md
