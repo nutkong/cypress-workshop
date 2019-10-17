@@ -7,10 +7,10 @@
 
 ## Environment setup (Mac)
 
-✅ git
-✅ nodeJS v10.16 or above
-✅ yarn v1.17 or above
-✅ VSCODE (recommend)
+✅ git<br/>
+✅ nodeJS v10.16 or above<br/>
+✅ yarn v1.17 or above<br/>
+✅ VSCODE (recommend)<br/>
 
 ```sh
 $ git --version
