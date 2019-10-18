@@ -1,3 +1,6 @@
+echo "DELETE ALL CONTAINERS..."
+sudo docker rm -f $(sudo docker container ls -aq)
+
 echo "STARTING MONGODB..."
 sudo docker run --name mongodb -ditp 27017:27017 mongo:3.4
 
