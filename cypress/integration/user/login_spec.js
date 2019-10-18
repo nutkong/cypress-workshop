@@ -24,7 +24,6 @@ describe("/login", function() {
   it("login successfully [by selecting data-*]", function() {
     cy.get("[data-test=email]").type("test@mail.com");
     cy.get("[data-test=password]").type("test{enter}");
-    // cy.get("button[type=submit]").click();
     // cy.get("[data-test=login-form]").submit();
   });
 
@@ -32,7 +31,6 @@ describe("/login", function() {
     cy.fixture("users").then(function(users) {
       cy.get("[data-test=email]").type(users[0].email);
       cy.get("[data-test=password]").type(`${users[0].password}{enter}`);
-      // cy.get("button[type=submit]").click();
       // cy.get("[data-test=login-form]").submit();
     });
   });

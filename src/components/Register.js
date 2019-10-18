@@ -58,7 +58,10 @@ class Register extends React.Component {
 
               <ListErrors errors={this.props.errors} />
 
-              <form onSubmit={this.submitForm(username, email, password)}>
+              <form
+                data-test="signup-form"
+                onSubmit={this.submitForm(username, email, password)}
+              >
                 <fieldset>
                   <fieldset className="form-group">
                     <input

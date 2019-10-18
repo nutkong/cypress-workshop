@@ -2,6 +2,7 @@
   {
     "username": "test",
     "email": "test@mail.com",
-    "password": "test"
+    "password": "test",
+    "token": "super-secure-token"
   }
 ]
