@@ -1,0 +1,7 @@
+{
+  "id": "c-01",
+  "username": "test",
+  "email": "test@mail.com",
+  "password": "test",
+  "token": "super-secure-token"
+}
