@@ -16,6 +16,6 @@ echo "STARTING FRONTEND..."
 
 sudo docker image build -t conduit-fn -f ./frontend.Dockerfile .
 sudo docker container run -ditp 4100:80 \
-  -e REACT_APP_APIENDPOINT=http://$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' conduit-bn):4100 \
+  -e REACT_APP_APIENDPOINT=http://$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' conduit-bn):3000 \
   --name conduit-fn \
   conduit-fn
