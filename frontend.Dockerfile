@@ -1,9 +1,12 @@
 FROM alpine:latest as builder
+ARG api_endpoint
+
 RUN apk update && \
   apk upgrade
 ENV APK_ADD="bash curl nodejs yarn" \
   APK_DEL="bash curl nodejs yarn" \
-  npm_config_loglevel="silent"
+  npm_config_loglevel="silent" \
+  REACT_APP_APIENDPOINT=${api_endpoint}
 RUN apk add --no-cache ${APK_ADD}
 WORKDIR /app
 COPY . /app
