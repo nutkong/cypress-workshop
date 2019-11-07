@@ -26,14 +26,8 @@ sudo docker container run -ditp 3000:3000 \
   conduit-bn
 
 echo "STARTING FRONTEND..."
-sudo docker image build \
-  -t conduit-fn \
-  -f ./frontend.Dockerfile \
-  --build-arg api_endpoint=http://$CURRENT_IP:3000/api \
-  .
-sudo docker container run -ditp 4100:80 \
-  --name conduit-fn \
-  conduit-fn
+sudo docker image build -t conduit-fn -f ./frontend.Dockerfile --build-arg api_endpoint=http://$CURRENT_IP:3000/api .
+sudo docker container run -ditp 4100:80 --name conduit-fn conduit-fn
 
 echo "ATTACH CONTAINER TO NETWORK..."
 sudo docker network connect conduit-network conduit-bn 
