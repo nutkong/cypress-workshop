@@ -68,6 +68,8 @@ class Register extends React.Component {
                       className="form-control form-control-lg"
                       type="text"
                       placeholder="Username"
+                      id="username"
+                      name="username"
                       data-test="username"
                       value={this.props.username}
                       onChange={this.changeUsername}
@@ -79,6 +81,8 @@ class Register extends React.Component {
                       className="form-control form-control-lg"
                       type="email"
                       placeholder="Email"
+                      id="email"
+                      name="email"
                       data-test="email"
                       value={this.props.email}
                       onChange={this.changeEmail}
@@ -90,6 +94,8 @@ class Register extends React.Component {
                       className="form-control form-control-lg"
                       type="password"
                       placeholder="Password"
+                      id="password"
+                      name="password"
                       data-test="password"
                       value={this.props.password}
                       onChange={this.changePassword}
