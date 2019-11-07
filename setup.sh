@@ -2,7 +2,7 @@ if [[ "$OSTYPE" == "darwin"* ]];
   then
   CURRENT_IP=$(ip -4 a show en0| grep inet| awk '{ print $2}' | cut -d/ -f1)
 else
-  CURRENT_IP=$(ip -4 a show eth0| grep inet| awk '{ print $2}' | cut -d/ -f1)
+  CURRENT_IP=$(curl https://ipinfo.io/ip)
 fi
 
 echo $CURRENT_IP
