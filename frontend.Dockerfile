@@ -29,7 +29,8 @@ FROM alpine:latest
 RUN apk update && \
   apk upgrade
 ENV APK_ADD="bash curl nginx" \
-  APK_DEL="curl"
+  APK_DEL="curl" \
+  REACT_APP_APIENDPOINT=${api_endpoint}
 RUN apk add --no-cache ${APK_ADD} && \
   mkdir -p /run/nginx
 COPY ./nginx/app.conf /etc/nginx/conf.d/default.conf
