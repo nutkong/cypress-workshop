@@ -21,6 +21,3 @@ npm-debug.log
 # packager lock file
 *-lock.json
 *.lock
-
-# workspace configuration
-.vscode
