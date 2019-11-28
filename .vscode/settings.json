@@ -1,4 +1,27 @@
 {
-  "window.zoomLevel": 4,
-  "workbench.colorTheme": "Atom One Light"
+  "terminal.integrated.shell.osx": "zsh",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.validate.enable": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "explorer.openEditors.visible": 0,
+  "emmet.showExpandedAbbreviation": "never",
+  "eslint.codeAction.disableRuleComment": {
+    "enable": false
+  },
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Atom One Light",
+  "vim.disableExtension": true
 }
